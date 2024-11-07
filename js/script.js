@@ -84,9 +84,8 @@ window.addEventListener('click', (event) => {
 
 // grafik konten
 
-// Data for the health chart (e.g., monthly data for a year)
 const healthLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-const healthData = [80, 82, 85, 87, 90, 92, 95, 96, 94, 93, 92, 95]; // Example data
+const healthData = [80, 82, 85, 87, 90, 92, 95, 96, 94, 93, 92, 95]; 
 
 const ctx = document.getElementById('healthChart').getContext('2d');
 const healthChart = new Chart(ctx, {
@@ -99,7 +98,7 @@ const healthChart = new Chart(ctx, {
             borderColor: '#36a2eb',
             backgroundColor: 'rgba(54, 162, 235, 0.2)',
             fill: true,
-            tension: 0.1, // Adjusts the curve of the line
+            tension: 0.1, 
         }]
     },
     options: {
@@ -125,9 +124,8 @@ const healthChart = new Chart(ctx, {
     }
 });
 
-// Data for the education chart (e.g., annual data)
 const eduLabels = ['2019', '2020', '2021', '2022', '2023'];
-const eduData = [85, 87, 90, 92, 95]; // Example data
+const eduData = [85, 87, 90, 92, 95]; 
 
 const eduCtx = document.getElementById('educationChart').getContext('2d');
 const educationChart = new Chart(eduCtx, {
@@ -140,7 +138,7 @@ const educationChart = new Chart(eduCtx, {
             borderColor: '#4bc0c0',
             backgroundColor: 'rgba(75, 192, 192, 0.2)',
             fill: true,
-            tension: 0.1, // Adjusts the curve of the line
+            tension: 0.1,
         }]
     },
     options: {
@@ -174,42 +172,35 @@ document.addEventListener('DOMContentLoaded', function () {
     const popupContent = document.getElementById('popup-content');
     const closeButton = document.querySelector('.closee');
 
-    // Event listener for each "Read More" link
     readMoreLinks.forEach(link => {
         link.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent default link behavior
+            event.preventDefault(); 
 
-            // Safely get title and content attributes
             const titlee = this.getAttribute('data-title');
             const content = this.getAttribute('data-content');
 
-            // Check if title and content are defined
             if (titlee && content) {
-                // Set the title and content for the pop-up
                 popupTitle.textContent = titlee;
                 popupContent.textContent = content;
-                popup.style.display = 'block'; // Show the pop-up
+                popup.style.display = 'block';
             } else {
                 console.error('Title or content is undefined for this link:', this);
             }
         });
     });
 
-    // Close the pop-up when the close button is clicked
     closeButton.addEventListener('click', function () {
-        popup.style.display = 'none'; // Hide the pop-up
+        popup.style.display = 'none'; 
     });
 
-    // Close the pop-up when clicking outside of it
     window.addEventListener('click', function (event) {
         if (event.target === popup) {
-            popup.style.display = 'none'; // Hide the pop-up
+            popup.style.display = 'none'; 
         }
     });
 });
 
 // comen
-// Function to add comment to the container
 function addCommentToContainer(name, text) {
     const commentContainer = document.getElementById('comments-container');
     const commentCard = document.createElement('div');
@@ -230,7 +221,6 @@ function checkOverflowAndToggleNav() {
     const prevBtn = document.getElementById('prev-btn');
     const nextBtn = document.getElementById('next-btn');
 
-    // Hide navigation on mobile, show on desktop if overflow occurs
     if (window.innerWidth > 768 && contentWidth > containerWidth) {
         prevBtn.style.display = 'block';
         nextBtn.style.display = 'block';
@@ -240,7 +230,7 @@ function checkOverflowAndToggleNav() {
     }
 }
 
-// Load comments from API and add them to the container
+// mengambil dari API
 function loadComments() {
     fetch('https://672c4cc71600dda5a9f7dcd4.mockapi.io/komentar')
         .then(response => response.json())
@@ -329,9 +319,8 @@ commentContainer.addEventListener('touchmove', (e) => {
     commentContainer.scrollLeft = scrollLeft - walk;
 });
 
-// Add functionality to scroll using navigation buttons
 let scrollPosition = 0;
-const scrollAmount = 300; // Adjust scroll distance
+const scrollAmount = 300; 
 
 document.getElementById('prev-btn').addEventListener('click', () => {
     const commentContainer = document.getElementById('comments-container');
