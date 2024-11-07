@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reduktor City</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/REDUKTOR.png" type="image/png">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="img/REDUKTOR.png" alt="Logo">
+            <span class="red">Reduktor</span> <span class="city">City</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="img/hero1.jpg" alt="Slide 1">
+                    <div class="overlay">
+                        <h2>Welcome to Reduktor City</h2>
+                        <p>Discover the innovative solutions that make our city a model for smart living. Join us in
+                            shaping a sustainable future for all residents.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/hero2.jpg" alt="Slide 2">
+                    <div class="overlay">
+                        <h2>Innovative Solutions</h2>
+                        <p>Explore our cutting-edge technologies designed to enhance urban living, improve
+                            transportation, and connect communities seamlessly.</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="img/hero3.jpg" alt="Slide 3">
+                    <div class="overlay">
+                        <h2>Community Driven</h2>
+                        <p>Engage with fellow citizens as we build a thriving community focused on collaboration,
+                            sustainability, and shared growth.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation">
+                <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Public Services Section -->
+    <section class="public-services">
+        <h2>Public Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-trash-alt"></i> <!-- Waste Management Icon -->
+                </div>
+                <h3>Waste Management</h3>
+                <p>Efficient waste disposal services to keep our city clean and green.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-bus"></i> <!-- Public Transport Icon -->
+                </div>
+                <h3>Public Transport</h3>
+                <p>Reliable and affordable transport options for all residents.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-heartbeat"></i> <!-- Health Services Icon -->
+                </div>
+                <h3>Health Services</h3>
+                <p>Access to quality healthcare for all citizens, ensuring well-being.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-school"></i> <!-- Schools Icon -->
+                </div>
+                <h3>Schools</h3>
+                <p>Quality education and facilities for students in our community.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-book-open"></i> <!-- Public Libraries Icon -->
+                </div>
+                <h3>Public Libraries</h3>
+                <p>Access to books, resources, and learning opportunities for all ages.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section class="about">
+        <div class="about-content">
+            <h2>About Reduktor City</h2>
+            <p>
+                Welcome to Reduktor City, your hub for smarter urban solutions. We provide innovative services designed
+                to meet the evolving needs of modern cities and their residents.
+            </p>
+            <p>
+                Our experienced team is dedicated to delivering quality and excellence in every project, ensuring you
+                receive the best solutions available.
+            </p>
+            <p>
+                Our mission is to build lasting relationships based on trust and transparency while enhancing urban
+                livability and sustainability.
+            </p>
+            <p>
+                Join us on the journey to smarter living, and let us support you with our range of smart city services.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="img/hero1.jpg" alt="About Reduktor City" />
+        </div>
+    </section>
+
+    <!-- Success Story -->
+    <section class="success-stories">
+        <h2>Success Stories</h2>
+        <p>Discover how Reduktor City has transformed urban living through innovative smart city solutions.</p>
+        <div class="stories-container">
+            <div class="story-card">
+                <img src="img/trans.jpg" alt="Smart Transportation" />
+                <div class="story-content">
+                    <h3>Smart Transportation Solutions</h3>
+                    <p>Implemented an intelligent traffic management system that reduced congestion by 30%.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+            <div class="story-card">
+                <img src="img/energy.jpg" alt="Sustainable Energy" />
+                <div class="story-content">
+                    <h3>Sustainable Energy Management</h3>
+                    <p>Developed solar energy initiatives that powered 50% of city facilities.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+            <div class="story-card">
+                <img src="img/comonity.jpg" alt="Community Engagement" />
+                <div class="story-content">
+                    <h3>Community Engagement Programs</h3>
+                    <p>Launched programs that increased citizen participation in urban planning by 40%.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+            <div class="story-card">
+                <img src="img/sampah.jpg" alt="Smart Waste Management" />
+                <div class="story-content">
+                    <h3>Smart Waste Management</h3>
+                    <p>Implemented smart bins that improved recycling rates by 25% across the city.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+            <div class="story-card">
+                <img src="img/school.jpg" alt="Smart Education" />
+                <div class="story-content">
+                    <h3>Smart Education Initiatives</h3>
+                    <p>Introduced digital learning platforms that enhanced educational access for over 10,000 students.
+                    </p>
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+            <div class="story-card">
+                <img src="img/hospital.jpg" alt="Smart Healthcare" />
+                <div class="story-content">
+                    <h3>Smart Healthcare Solutions</h3>
+                    <p>Implemented telemedicine services that increased healthcare access for residents by 50%.</p>
+                    <button class="read-more">Read More</button>
+                </div>
+            </div>
+    </section>
+
+    <!-- Success Story Modal -->
+    <div class="modal" id="successStoryModal">
+        <div class="modal-content">
+            <span class="close" id="modalClose">&times;</span>
+            <h3 id="modalTitle">Success Story Title</h3>
+            <p id="modalDescription">Detailed description of the success story goes here.</p>
+        </div>
+    </div>
+
+    <!-- grafik -->
+    <!-- Grafik Section -->
+    <section class="charts">
+        <div class="chart-container">
+            <h2>Health Chart</h2>
+            <canvas id="healthChart" width="400" height="200"></canvas>
+        </div>
+        <div class="chart-container">
+            <h2>Education Chart</h2>
+            <canvas id="educationChart" width="400" height="200"></canvas>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news">
+        <h2>Berita Terbaru Reduktor City</h2>
+        <div class="news-container">
+            <article class="news-item">
+                <img src="img/news1.jpg" alt="Acara Pembukaan Reduktor City">
+                <h3>Grand Opening Reduktor City: Menyambut Era Baru</h3>
+                <p>Reduktor City resmi dibuka! Bergabunglah dengan kami dalam perayaan ini dan temukan berbagai layanan
+                    inovatif yang kami tawarkan.</p>
+                <a href="#" class="read-moree" data-title="Grand Opening Reduktor City"
+                    data-content="Reduktor City resmi dibuka! Bergabunglah dengan kami dalam perayaan ini dan temukan berbagai layanan inovatif yang kami tawarkan.">Baca
+                    Selengkapnya</a>
+            </article>
+            <article class="news-item">
+                <img src="img/news2.jpg" alt="Promo Spesial">
+                <h3>Promo Spesial Bulan Ini: Dapatkan Diskon 20%</h3>
+                <p>Jangan lewatkan kesempatan untuk mendapatkan diskon 20% untuk layanan tertentu selama bulan ini.
+                    Kunjungi situs kami untuk info lebih lanjut!</p>
+                <a href="#" class="read-moree" data-title="Promo Spesial Bulan Ini"
+                    data-content="Jangan lewatkan kesempatan untuk mendapatkan diskon 20% untuk layanan tertentu selama bulan ini. Kunjungi situs kami untuk info lebih lanjut!">Baca
+                    Selengkapnya</a>
+            </article>
+            <article class="news-item">
+                <img src="img/news3.jpg" alt="Kolaborasi Baru">
+                <h3>Reduktor City Bekerja Sama dengan Mitra Baru</h3>
+                <p>Kami sangat senang mengumumkan kolaborasi terbaru dengan beberapa mitra strategis untuk memberikan
+                    layanan yang lebih baik kepada pelanggan.</p>
+                <a href="#" class="read-moree" data-title="Kolaborasi Baru"
+                    data-content="Kami sangat senang mengumumkan kolaborasi terbaru dengan beberapa mitra strategis untuk memberikan layanan yang lebih baik kepada pelanggan.">Baca
+                    Selengkapnya</a>
+            </article>
+            <article class="news-item">
+                <img src="img/news4.jpg" alt="Event Menarik">
+                <h3>Event Menarik di Reduktor City: Jangan Lewatkan!</h3>
+                <p>Siap-siap untuk acara seru di Reduktor City! Bergabunglah dengan kami untuk berbagai aktivitas dan
+                    penawaran menarik yang akan datang.</p>
+                <a href="#" class="read-moree" data-title="Event Menarik"
+                    data-content="Siap-siap untuk acara seru di Reduktor City! Bergabunglah dengan kami untuk berbagai aktivitas dan penawaran menarik yang akan datang.">Baca
+                    Selengkapnya</a>
+            </article>
+            <article class="news-item">
+                <img src="img/news5.jpg" alt="Kegiatan Komunitas">
+                <h3>Reduktor City: Dukungan untuk Kegiatan Komunitas</h3>
+                <p>Kami bangga dapat mendukung berbagai kegiatan komunitas untuk meningkatkan kualitas hidup di sekitar
+                    kita. Ikuti kami untuk informasi lebih lanjut.</p>
+                <a href="#" class="read-moree" data-title="Dukungan untuk Kegiatan Komunitas"
+                    data-content="Kami bangga dapat mendukung berbagai kegiatan komunitas untuk meningkatkan kualitas hidup di sekitar kita. Ikuti kami untuk informasi lebih lanjut.">Baca
+                    Selengkapnya</a>
+            </article>
+            <article class="news-item">
+                <img src="img/news6.jpg" alt="Inovasi Terbaru">
+                <h3>Inovasi Terbaru dari Reduktor City: Meningkatkan Pengalaman Pelanggan</h3>
+                <p>Kami memperkenalkan teknologi terbaru untuk meningkatkan pengalaman pelanggan. Temukan lebih banyak
+                    tentang inovasi kami di situs web!</p>
+                <a href="#" class="read-moree" data-title="Inovasi Terbaru"
+                    data-content="Kami memperkenalkan teknologi terbaru untuk meningkatkan pengalaman pelanggan. Temukan lebih banyak tentang inovasi kami di situs web!">Baca
+                    Selengkapnya</a>
+            </article>
+        </div>
+
+        <!-- Pop-up Modal -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="closee">&times;</span>
+                <h3 id="popup-title"></h3>
+                <p id="popup-content"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <h2>Galeri Foto Reduktor City</h2>
+        <div class="gallery-container">
+            <a href="img/hero1.jpg" data-lightbox="gallery" class="gallery-item">
+                <img src="img/hero1.jpg" alt="Foto 1">
+            </a>
+            <a href="img/hero2.jpg" data-lightbox="gallery" class="gallery-item tall">
+                <img src="img/hero2.jpg" alt="Foto 2">
+            </a>
+            <a href="img/hero3.jpg" data-lightbox="gallery" class="gallery-item wide">
+                <img src="img/hero3.jpg" alt="Foto 3">
+            </a>
+            <a href="img/city4.jpg" data-lightbox="gallery" class="gallery-item">
+                <img src="img/city4.jpg" alt="Foto 4">
+            </a>
+            <a href="img/city5.jpg" data-lightbox="gallery" class="gallery-item">
+                <img src="img/city5.jpg" alt="Foto 5">
+            </a>
+            <a href="img/city6.jpg" data-lightbox="gallery" class="gallery-item tall">
+                <img src="img/city6.jpg" alt="Foto 6">
+            </a>
+            <a href="img/city7.jpg" data-lightbox="gallery" class="gallery-item tall">
+                <img src="img/city7.jpg" alt="Foto 7">
+            </a>
+            <a href="img/city8.jpg" data-lightbox="gallery" class="gallery-item tall">
+                <img src="img/city8.jpg" alt="Foto 8">
+            </a>
+        </div>
+    </section>
+
+    <!-- testy -->
+    <div class="container">
+        <h2>Komentar</h2>
+
+        <div class="swiper-container">
+            <div class="comments-container" id="comments-container">
+                <!-- Komentar akan dimasukkan di sini melalui JavaScript -->
+            </div>
+            <button id="prev-btn" class="nav-btn">Prev</button>
+            <button id="next-btn" class="nav-btn">Next</button>
+        </div>
+
+        <div class="comment-form">
+            <h3>Tambahkan Komentar</h3>
+            <input type="text" id="name" placeholder="Nama" class="form-input">
+            <textarea id="comment" placeholder="Komentar" class="form-input"></textarea>
+            <button onclick="addComment()" class="submit-btn">Kirim Komentar</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>About Reduktor CTY</h3>
+                <p>Welcome to Reduktor City, your hub for smarter urban solutions. We provide innovative services
+                    designed
+                    to meet the evolving needs of modern cities and their residents.</p>
+                <p>Contact us: info@reduktocty.com</p>
+            </div>
+            <div class="footer-section services">
+                <h3>Our Services</h3>
+                <ul>
+                    <li><a href="#">Public Services</a></li>
+                    <li><a href="#">Community Development</a></li>
+                    <li><a href="#">Smart Infrastructure</a></li>
+                    <li><a href="#">Digital Governance</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact">
+                <h3>Contact Us</h3>
+                <p><strong>Address:</strong> Jl. Merah Putih No. 1, Jakarta</p>
+                <p><strong>Phone:</strong> (021) 123-4567</p>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-separator"></div> <!-- Separator line -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Reduktor CTY. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="js/script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="comments.json"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+
+</body>
+
+</html>
