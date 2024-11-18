@@ -78,6 +78,7 @@ body::-webkit-scrollbar {
 .slides {
     display: flex;
     transition: transform 0.5s ease;
+    touch-action: pan-y;
 }
 
 .slide {
@@ -87,6 +88,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     position: relative;
+    user-select: none;
 }
 
 .slide img {
