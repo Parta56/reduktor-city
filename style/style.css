@@ -795,13 +795,13 @@ h3 {
     .overlay {
         padding: 15px;
         max-width: 60%;
-        font-size: 10px;
+        font-size: 15px;
         margin-top: -220px;
         align-items: center;
     }
 
-    .overlay h1{
-        font-size: 5px
+    .overlay h2{
+        font-size: 15px
     }
 
     .public-services {
