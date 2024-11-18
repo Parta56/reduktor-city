@@ -800,6 +800,10 @@ h3 {
         align-items: center;
     }
 
+    .overlay h1{
+        font-size: 20px
+    }
+
     .public-services {
         padding: 20px 15px;
     }
