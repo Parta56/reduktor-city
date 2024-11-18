@@ -795,7 +795,7 @@ h3 {
     .overlay {
         padding: 15px;
         max-width: 60%;
-        margin-top: -220px;
+        margin-top: -240px;
         align-items: center;
     }
 
@@ -805,6 +805,7 @@ h3 {
 
     .overlay p{
         font-size: 15px;
+        margin-top: -20px
     }
 
     .public-services {
