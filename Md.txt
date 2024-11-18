@@ -1,0 +1,6 @@
+web ini adalah reduktor city yg mengambil tema smart ctiy
+web ini sudah tersambung ke mockapi di fungsi komentar ny
+jadi sudah bisa simpan comentar.
+
+by I Gede Agus Supartana
+and fuji
