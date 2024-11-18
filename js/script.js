@@ -28,6 +28,37 @@ setInterval(() => {
     changeSlide(1);
 }, 3000);
 
+let startX = 0;
+let currentX = 0;
+let isDragging = false;
+const slidesContainer = document.querySelector('.slides');
+
+slidesContainer.addEventListener('touchstart', (event) => {
+    startX = event.touches[0].clientX;
+    isDragging = true;
+});
+
+slidesContainer.addEventListener('touchmove', (event) => {
+    if (!isDragging) return;
+    currentX = event.touches[0].clientX;
+    const offset = currentX - startX;
+
+    slidesContainer.style.transform = `translateX(calc(${-currentIndex * 100}% + ${offset}px))`;
+});
+
+slidesContainer.addEventListener('touchend', () => {
+    isDragging = false;
+    const offset = currentX - startX;
+
+    if (offset > 50) {
+        changeSlide(-1);
+    } else if (offset < -50) {
+        changeSlide(1);
+    } else {
+        slidesContainer.style.transform = `translateX(${-currentIndex * 100}%)`;
+    }
+});
+
 
 // JavaScript for opening and closing the modal
 const readMoreButtons = document.querySelectorAll('.read-more');
